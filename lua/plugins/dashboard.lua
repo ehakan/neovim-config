@@ -13,7 +13,7 @@ return {
                 _| | | \ V /| | | | | | |  
                (_)_| |_|\_/ |_|_| |_| |_|  
       ]]
-      dashboard.section.header.val = vim.split(header, "\n")
+      dashboard.section.header.val = vim.split(header, "\n", {})
     end,
   },
 }

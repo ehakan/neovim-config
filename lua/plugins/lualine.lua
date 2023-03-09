@@ -2,6 +2,7 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
+    -- TODO: convert to decorator
     opts = function()
       -- this was copy pasted from the LazyVim settings, just for owerwriting
       local icons = require("lazyvim.config").icons
