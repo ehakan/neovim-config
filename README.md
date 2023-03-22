@@ -1,4 +1,12 @@
-# 💤 LazyVim
+# personal neovim config
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+My neovim setup, based on [LazyVim](https://github.com/LazyVim/LazyVim).
+It's still pretty much vanilla LazyVim, with small modifications
+
+## Modifications
+
+- Nord theme by default
+- Half-baked kubernetes support
+
+## TODO
+- [ ] Proper kubernetes setup for CRDs
