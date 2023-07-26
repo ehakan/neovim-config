@@ -1,19 +1,19 @@
 return {
-  -- install nordfox via nightfox
   {
-    "EdenEast/nightfox.nvim",
-    opts = {
-      options = {
-        transparent = true,
+    {
+      "catppuccin/nvim",
+      name = "catppuccin",
+      opts = {
+        flavor = "mocha",
       },
     },
   },
 
-  -- configure LazyVim to load nordfox
+  -- patch LazyVim to load catppuccin
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nordfox",
+      colorscheme = "catppuccin",
     },
   },
 }
