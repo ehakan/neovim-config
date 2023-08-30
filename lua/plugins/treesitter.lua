@@ -11,9 +11,7 @@ return {
 
       vim.opt.foldmethod = "expr"
       vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-
-      -- TODO: when opening a new buffer, this may or may not
-      -- fold everything, making me manually `zR` to unfold all.
+      vim.opt.foldenable = false
     end,
   },
 }
