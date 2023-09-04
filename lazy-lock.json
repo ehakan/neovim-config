@@ -1,0 +1,6 @@
+{
+  "catppuccin": { "branch": "main", "commit": "2e3e5ebcdc24ef0d5b14a0a999dbbe7936512c46" },
+  "lazy.nvim": { "branch": "main", "commit": "2a9354c7d2368d78cbd5575a51a2af5bd8a6ad01" },
+  "nvim-web-devicons": { "branch": "master", "commit": "bc11ee2498de2310de5776477dd9dce65d03b464" },
+  "oil.nvim": { "branch": "master", "commit": "ca2560cae8a680c424a338fbeca8f0ab84e9791d" }
+}
