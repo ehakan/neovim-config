@@ -11,5 +11,17 @@ return {
       require("catppuccin").setup(opts)
       vim.cmd.colorscheme("catppuccin")
     end,
-  }
+  },
+  {
+    'nvim-lualine/lualine.nvim',
+    -- See `:help lualine.txt`
+    opts = {
+      options = {
+        icons_enabled = false,
+        theme = 'catppuccin',
+        component_separators = '|',
+        section_separators = '',
+      },
+    },
+  },
 }
