@@ -17,15 +17,6 @@ return {
               },
             },
           },
-          gopls = {
-            settings = {
-              completeUnimported = true,
-              usePlaceholders = true,
-              analyses = {
-                unusedparams = true,
-              },
-            },
-          },
         },
       }
     end,
