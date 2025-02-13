@@ -9,3 +9,5 @@ vim.filetype.add({
     MD = "markdown",
   },
 })
+
+vim.g.snacks_animate = false
