@@ -11,3 +11,4 @@ vim.filetype.add({
 })
 
 vim.g.snacks_animate = false
+vim.opt.fixeol = false
