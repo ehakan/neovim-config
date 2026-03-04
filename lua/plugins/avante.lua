@@ -5,6 +5,9 @@ return {
       debug = false,
       provider = "cursor",
       mode = "agentic",
+      behaviour = {
+        auto_approve_tool_permissions = false,
+      },
       copilot = nil,
       acp_providers = {
         cursor = {
