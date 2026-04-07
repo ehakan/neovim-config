@@ -33,7 +33,7 @@ return {
 
       ui = {
         -- I'm using render-markdown.nvim already
-        enable = false,
+        enabled = false,
       },
     },
   },
