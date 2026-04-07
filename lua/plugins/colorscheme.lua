@@ -4,11 +4,6 @@ return {
     {
       "catppuccin/nvim",
       name = "catppuccin",
-      -- Workaround for https://github.com/LazyVim/LazyVim/issues/6355#issuecomment-3212986215
-      -- opts = {
-      --   flavor = "mocha",
-      --   transparent_background = true,
-      -- },
       opts = function(_, opts)
         opts.flavor = "mocha"
         opts.transparent_background = true
@@ -21,7 +16,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-nvim",
     },
   },
 }
