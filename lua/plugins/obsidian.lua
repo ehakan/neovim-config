@@ -13,7 +13,14 @@ return {
     ---@module 'obsidian'
     ---@type obsidian.config
     opts = {
-      legacy_commands = false, -- will be removed in the next major release
+      legacy_commands = false,
+      note_id_func = function(title, dir)
+        return require("obsidian.builtin").title_id(title, dir)
+      end,
+
+      checkbox = {
+        create_new = false,
+      },
 
       workspaces = {
         {
@@ -22,8 +29,10 @@ return {
         },
       },
 
-      frontmatter = {
-        enabled = false,
+      link = {
+        style = "wiki",
+        format = "absolute",
+        auto_update = true,
       },
 
       daily_notes = {
@@ -33,22 +42,7 @@ return {
 
       ui = {
         -- I'm using render-markdown.nvim already
-        enabled = false,
-      },
-    },
-  },
-
-  -- Tell blink to use obsidian sources for markdown files.
-  -- Obsidian registers the providers itself via blink.add_source_provider() during setup,
-  -- but its inject_sources() can miss the first buffer due to BufEnter timing,
-  -- so we ensure the source names are present in per_filetype from the start.
-  {
-    "saghen/blink.cmp",
-    opts = {
-      sources = {
-        per_filetype = {
-          markdown = { inherit_defaults = true, "obsidian", "obsidian_new", "obsidian_tags" },
-        },
+        enable = false,
       },
     },
   },
